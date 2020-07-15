@@ -1,0 +1,89 @@
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #fff;
+	font-family: 'Noto Sans HK', sans-serif;
+	font-size: 14px;
+}
+
+.landing {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    height: 100vh;
+}
+
+.cover-image {
+	width: 300px;
+	max-width: 500px;
+	height: auto;
+}
+
+.site-title {
+	font-size: 5em;
+    margin-bottom: 16px;
+}
+
+.site-description {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+	text-decoration: none;
+	background: #6d63fd;
+	color: white;
+	padding: 10px 25px;
+    border-radius: 5px;
+    border: 0;
+	font-weight: 400;
+	font-size: 1em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease-in-out;
+	outline: 0;
+}
+
+.btn {
+	cursor: pointer;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1140px){
+	.landing{
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 30px;
+	}
+	.landing-left{
+		text-align: center;
+		margin-bottom: 40px; 
+	}
+}
+
+@media(max-width: 600px){
+	.site-title{
+		font-size: 4em;
+	}
+	.site-description{
+		font-size: 1.5em;
+	}
+	.btn{
+		font-size: 1em;
+	}
+}
+
+@media(max-width: 480px){
+	.site-title{
+		font-size: 3em;
+		margin-bottom: 8px;
+	}
+	.site-description{
+		font-size: 1.2em;
+	}
+	.btn{
+		font-size: 0.9em;
+	}
+}
